@@ -1,0 +1,74 @@
+make sure you use VsCode for code editor and these Vscode extension
++ Prettier //code formatter
++ Eslint //highlights unused and unwanted code
+
+
+>> Project setup : 
+Use these commands to install project
+=====================================
+
+# Check the version of react and node. This needs to be same for every developer.
+# npx create-react-app [name of project] 
+# cd  [name of project]  <!--move to the project-->
+# npm i antd  <!-- we will use antd as a UI library-->
+# npm i node-sass <!-- for using SCSS format, this is required-->
+# npm i react-router-dom <!-- for routing we will use this library-->
+# npm start  <!-- start project.-->
+#
+=================================
+Or you can take pull from gitlab  
+=================================
+Login to gitlab
+Take pull from project url
+git clone project url
+move to folder
+npm i
+npm i node-sass // this command should be run
+npm start  // start project.
+
+=================================
+Folder structure: 
+=================================
+
+|--Node_module 
+|--Public 
+|--Src
+    |--Assets
+        |--images <!-- all the images/ image folder will go here -->
+        |--scss-component <!-- ants component's css is here component wise -->
+            |-- <!--colors and font present with variable, if you want to change extra thing so it from here  -->
+        |--variables
+            |-- <!-- if you want to change the color, font, border-color -->
+        bootstrap.css <!-- for width, margin, padding etc this can be used-->
+        global.scss <!-- css that can be defined globally will be written here-->
+    |--Components
+        |--auth <!-- All the auth page like login , register etc will come in this section -->
+        |--error page <!-- all the error pages  -->
+        |--landing page <!--allcms pages like home, about, contact etc can be created here --> 
+        |--layout <!-- header/footer/sidebar --> 
+            |-- Authlayout <!-- Authorised people can access these routes as well as default routes -->
+            |-- Defaultlayout <!-- Non authorised people can only these routes -->
+        |--ui-component <!-- ui compoenent can be manipulated from here --> 
+            |--Button<!-- custom button component --> 
+            |--Form<!-- form which contains multiple attributes has written here to redule line of code --> 
+            |--Image<!-- Use this compoenent to avoid extra words like preview and extra class --> 
+            |--Text<!-- Typography is desiged here --> 
+        |--utilities <!-- alert, loader and notification usage as per parameters provoided --> 
+            |--Alert
+            |--Loader
+            |--Notification
+    |--Routes
+        |--index <!-- all routes path here --> 
+        |--routes based on userlogin<!--user/admin/superadmin routes  --> 
+    |--Theme <!--for changing the theme light/dark -->
+    |--Services <!--APIs list here -->
+    |--Utils
+        |--Authcontext <!--this maintain the user detail throughout the platform -->
+        |--Constant <!--we can declare the constant for regex  and other variables that needs to be constant -->
+        |--Helperfunction <!-- can declare the global function eg. addition/subtraction or changing anything -->
+        |--Imagepath <!-- declare the image path here-->
+    |--App <!-- -->
+    |--index <!-- browserrouter for routes intact and theme provider (light/dark) is used here -->
+|--Gitignore <!--all the images folderwise-->
+|--Package.lock.json
+|--package.json

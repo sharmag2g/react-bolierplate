@@ -1,0 +1,35 @@
+@import '../variables/colors.scss';
+@import '../variables/fonts.scss';
+@import '../variables/lengths.scss';
+@import '../variables/borders.scss';
+// custom
+
+.ant-select {
+    color: $primaryColor !important;
+    line-height: $inputLineHeight !important;
+}
+
+.ant-input-group-addon .ant-select.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    border: none !important;
+}
+
+// .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+//     border: 1px solid $defaultInputBorderColor !important;
+//     border-radius: $defaultBorderRadius !important;
+// }
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    width: 100% !important;
+    height: auto !important;
+    padding: 8px 11px !important;
+}
+
+.cuntry_code .ant-input-group-addon {
+    border-radius: 6px 0px 0px 6px !important;
+}
+
+.cuntry_code .ant-input {
+    border-radius: 0px 6px 6px 0px !important;
+    padding: 8px 11px !important;
+
+}

@@ -1,0 +1,113 @@
+@import '../../assets/variables/colors.scss';
+@import '../../assets/variables/borders.scss';
+@import '../../assets/variables/fonts.scss';
+
+
+@mixin main_btn_effect_2 {
+    background: $mainHoverBackground !important;
+    border: 1px solid $mainHoverBackground !important;
+    color: $defaultBackground !important;
+    border-radius: $defaultBorderRadius !important;
+}
+
+@mixin main_btn_effect_1 {
+    background: $primaryColor !important;
+    border-radius: $defaultBorderRadius !important;
+    color: $defaultBackground !important;
+    border: 1px solid $primaryColor !important;
+}
+
+@mixin secondary_btn_effect_2 {
+    background: $defaultBackground !important;
+    border: 1px solid $primaryColor !important;
+    color: $primaryColor !important;
+    border-radius: $defaultBorderRadius !important;
+}
+
+@mixin secondary_btn_effect_1 {
+    background: $secondaryBackground !important;
+    border-radius: $defaultBorderRadius !important;
+    color: $primaryColor !important;
+    border: 1px solid $primaryColor !important;
+}
+
+.btn_size {
+    padding: 5px 15px;
+    height: auto !important;
+    font-size: 18px !important;
+}
+
+.main-btn {
+    @extend .btn_size;
+    @include main_btn_effect_1;
+
+    &:hover {
+        @include main_btn_effect_2;
+    }
+
+    &:focus {
+        @include main_btn_effect_2;
+    }
+}
+
+.secondary-button {
+    @extend .btn_size;
+    @include secondary_btn_effect_2;
+
+    &:hover {
+        @include secondary_btn_effect_1;
+    }
+
+    &:focus {
+        @include secondary_btn_effect_1;
+    }
+}
+
+.link-btn {
+    color: $primaryColor !important;
+
+    &:hover {
+        color: $mainHoverBackground !important;
+    }
+
+    &:focus {
+        color: $mainHoverBackground !important;
+
+    }
+}
+
+.commontext {
+    color: $commonText !important;
+    font-family: $font1;
+    position: relative !important;
+}
+
+// text-scss
+.heading_text_1 {
+    @extend .commontext;
+}
+
+.heading_text_2 {
+    @extend .commontext;
+}
+
+.normal_text {
+    font-size: 16px;
+    color: $commonText !important;
+    font-family: $font2;
+    position: relative !important;
+
+}
+
+.small_text {
+    font-size: 15px;
+    color: $commonText !important;
+    position: relative !important;
+
+}
+
+.span_text {
+    color: $commonText !important;
+    position: relative !important;
+
+}

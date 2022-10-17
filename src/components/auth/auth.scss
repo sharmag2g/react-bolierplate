@@ -1,0 +1,62 @@
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/images/5570863.jpg');
+    background-position: bottom;
+}
+
+.login-form {
+    // width: 20vw;
+    border-radius: 6px;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 30px #ebebeb;
+    background: #fff;
+
+    .login-form-forgot {
+        float: right;
+        color: cadetblue;
+    }
+
+    .sign_with {
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 8px;
+            left: -25px;
+            width: 20px;
+            height: 1px;
+            background: #000;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 8px;
+            right: -25px;
+            width: 20px;
+            height: 1px;
+            background: #000;
+        }
+    }
+}
+
+.social-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:600px) {
+    .login-form {
+        box-shadow: none;
+        background: transparent;
+    }
+}
+
+
+// .ant-form-item {
+//     margin-bottom: 10px !important;
+// }

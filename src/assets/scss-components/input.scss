@@ -1,0 +1,208 @@
+@import '../variables/borders.scss';
+@import '../variables/colors.scss';
+@import '../variables/lengths.scss';
+@import '../variables/fonts.scss';
+
+.ant-input-affix-wrapper {
+    border: 1px solid $defaultBorderColor !important;
+    padding: 8px 11px !important;
+    border-radius: $defaultBorderRadius !important;
+
+
+}
+
+.ant-input-affix-wrapper::-moz-placeholder {
+    color: $placeholderColor;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.ant-input-affix-wrapper:-ms-input-placeholder {
+    color: $placeholderColor;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ant-input-affix-wrapper::placeholder {
+    color: $placeholderColor;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ant-input-affix-wrapper:hover {
+    border-color: $primaryColor !important;
+}
+
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+    border-color: $primaryColor !important;
+    color: $primaryColor !important;
+}
+
+
+
+.ant-input-affix-wrapper-disabled {
+    background-color: $inputDisabledText;
+    border-color: $defaultBorderColor !important;
+}
+
+.ant-input-affix-wrapper-disabled:hover {
+    border-color: $defaultBorderColor !important;
+}
+
+.ant-input-affix-wrapper[disabled] {
+    background-color: $inputDisabledText;
+    border-color: $defaultBorderColor !important;
+}
+
+.ant-input-affix-wrapper[disabled]:hover {
+    border-color: $defaultBorderColor !important;
+}
+
+
+
+textarea.ant-input-affix-wrapper {
+    min-height: $minInputHeight;
+    line-height: $inputLineHeight;
+}
+
+
+.ant-input::-moz-placeholder {
+    color: $placeholderColor;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.ant-input:-ms-input-placeholder {
+    color: $placeholderColor;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ant-input::placeholder {
+    color: $placeholderColor;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ant-input:hover {
+    border-color: $primaryColor !important;
+    border-right-width: 1px;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+    border-color: $primaryColor !important;
+}
+
+
+.ant-input-disabled {
+    background-color: $inputDisabledText;
+    border-color: $defaultBorderColor !important;
+}
+
+
+
+.ant-input[disabled] {
+    background-color: $inputDisabledText;
+    border-color: $defaultBorderColor !important;
+}
+
+textarea.ant-input {
+    min-height: $minInputHeight;
+    line-height: $inputLineHeight;
+}
+
+.ant-input-group {
+    line-height: $inputLineHeight;
+}
+
+.ant-input-group-addon {
+    background-color: $defaultBackground;
+    border: 1px solid $defaultBorderColor !important;
+    // border-radius: $defaultBorderRadius !important;
+}
+
+.ant-input-search .ant-input:hover,
+.ant-input-search .ant-input:focus {
+    border-color: $primaryColor !important;
+}
+
+.ant-input-search .ant-input:hover+.ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary),
+.ant-input-search .ant-input:focus+.ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary) {
+    border-left-color: $primaryColor !important;
+}
+
+.ant-input-search .ant-input-affix-wrapper {
+    border-radius: $defaultBorderRadius !important;
+}
+
+.ant-input-search .ant-input-lg {
+    line-height: $inputLineHeight !important;
+}
+
+
+.ant-input-search-rtl .ant-input:hover+.ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary),
+.ant-input-search-rtl .ant-input:focus+.ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary) {
+    border-right-color: $primaryColor !important;
+    border-left-color: $defaultBorderColor !important;
+}
+
+.ant-input-search-rtl>.ant-input-group>.ant-input-affix-wrapper:hover,
+.ant-input-search-rtl>.ant-input-group>.ant-input-affix-wrapper-focused {
+    border-right-color: $primaryColor !important;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .ant-input {
+        height: 32px;
+    }
+
+    .ant-input-lg {
+        height: 40px;
+    }
+
+    .ant-input-sm {
+        height: 24px;
+    }
+
+    .ant-input-affix-wrapper>input.ant-input {
+        height: auto;
+    }
+}
+
+
+//   custom
+.ant-input {
+    color: $commonText !important;
+    line-height: $inputLineHeight !important;
+    background-color: $defaultBackground !important;
+    border-radius: $defaultBorderRadius !important;
+}
+
+.custom-input {
+    @extend .ant-input-affix-wrapper;
+}
+
+::placeholder {
+
+    color: #999 !important;
+    opacity: 1;
+    font-family: $font1;
+}
+
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper,
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover {
+    border-color: #ff4d4f !important;
+}
+
+.ant-input-affix-wrapper>input.ant-input {
+    position: relative;
+    top: 3px;
+}

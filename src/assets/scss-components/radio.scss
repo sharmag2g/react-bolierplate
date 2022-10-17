@@ -1,0 +1,20 @@
+@import '../variables/borders.scss';
+@import '../variables/colors.scss';
+@import '../variables/lengths.scss';
+@import '../variables/fonts.scss';
+
+.ant-radio-group {
+    color: $primaryColor !important;
+}
+
+.ant-radio-inner {
+    border-color: $defaultInputBorderColor !important;
+}
+
+.ant-radio-checked .ant-radio-inner {
+    border-color: $primaryColor !important;
+}
+
+.ant-radio-inner::after {
+    background-color: $primaryColor !important;
+}

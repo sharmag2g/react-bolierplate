@@ -1,0 +1,32 @@
+@import "../components/ui-components/element.scss";
+@import "./variables/fonts.scss";
+@import "./scss-components/checkbox.scss";
+@import "./scss-components/input.scss";
+@import "./scss-components/radio.scss";
+@import "./scss-components/select.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,
+span {
+    font-family: $font2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button span {
+    font-family: $font1 !important;
+}
+
+.ant-input-affix-wrapper {
+    color: #999;
+}
